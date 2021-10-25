@@ -19,5 +19,7 @@ int main()
     cin>>n;
    
    cout<<add(n);
-    return 0;
+   
+    
+     return 0;
 }
