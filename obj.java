@@ -5,6 +5,10 @@ class Pen{
     public void write(){
     System.out.println("writing");
 }
+public void printColor(){
+    System.out.println(this.color);
+    System.out.println(this.type);
+}
 
 }
 
@@ -13,7 +17,7 @@ public static void main(String[] args) {
   Pen pen1=new Pen();
   pen1.color="blue";
   pen1.type="gel";
-  pen1.write();
+  pen1.printColor();
 
 }
 }
