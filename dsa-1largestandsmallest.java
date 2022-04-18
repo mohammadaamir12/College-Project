@@ -7,6 +7,7 @@ public class dsa-1largestandsmallest {
 	int max=0,min=0;
 	for(int i=0;i<n;i++){
 	    a[i]=sc.nextInt();
+        
 	}
 	    if(n==1){
 	        max=a[0];
