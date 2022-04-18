@@ -1,26 +1,35 @@
 import java.util.*;
+
 public class javaa {
     public static void main (String[] args) {
-        
-        Scanner s=new Scanner (System.in);
-        int n=s.nextInt();
-        for(int i=1;i<=n;i++)
+        Scanner sc=new Scanner (System.in);
+        int size=sc.nextInt();
+        int arr[]=new int[size];
+        for(int i=0;i<size;i++)
         {
-            for(int j=1;j<=n-i;j++){
-                System.out.print(" ");
-            }
-            for(int k=1;k<=i;k++){
-                System.out.print(k);
-            }
-            for(int l=1;l<=i-1;l++)
-            {
-                System.out.print(i-l);
-                
-            }
-            System.out.println();
+            arr[i]=sc.nextInt();
         }
-       
+        
+        int l=Largest(arr);
+        for(int i=0;i<l.size;i++)
+        {
+            System.out.println(l);
+        }
+    }
+    
+	{
+	    int max=Integer.MIN_VALUE;
+	    for(int  i=0;i<arr.length;i++)
+	{
+	   if(arr[i]>max){
+	       max=arr[i];
+	   }
 	}
+	return max;
+	
+    
+
+    
     
     }
          
