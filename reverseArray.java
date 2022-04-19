@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class reverseArray {
 
     public static void main(String[] args) {
-		int a=50;
-		int b=Integer.MIN_VALUE;
-		if(a/0==b)
+		Scanner sc=new Scanner (System.in);
+		int n=sc.nextInt();
+		int arr[]=new int[n];
+		for(int i=0;i<arr.length;i++)
 		{
-	
-			System.out.println("Hello");
+		    arr[i]=sc.nextInt();
 		}
-		else
+		for(int j=arr.length-1;j>=0;j--)
 		{
-			System.out.println("Hi");
+		    System.out.print(arr[j]);
 		}
     }
 
